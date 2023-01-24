@@ -1,0 +1,157 @@
+:root {
+  --primary-clr-100:hsl(225, 100%, 94%);
+  --primary-clr-900:hsl(245, 75%, 52%);
+  --natural-clr-100:hsl(225, 100%, 98%);
+  --natural-clr-500:hsl(224, 23%, 55%);
+  --natural-clr-700:hsl(245, 83%, 68%);
+  --natural-clr-900:hsl(223, 47%, 23%);
+  --fw-500:500;
+  --fw-700:700;
+  --fw-900:900;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: var(--fw-500);
+  font-size: 1rem;
+  color: var(--natural-clr-500);
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--primary-clr-100);
+  margin: 0 1.5rem;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  display: grid;
+  background-color: #fff;
+  border-radius: 1.125rem;
+  overflow: hidden;
+  max-width: 450px;
+}
+.card__content {
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+  margin: 3.375rem 3rem;
+}
+@media (max-width: 600px) {
+  .card__content {
+    margin: 2.3125rem 1.5rem;
+  }
+}
+.card__title {
+  font-size: 1.7rem;
+  font-weight: var(--fw-900);
+  color: var(--natural-clr-900);
+}
+.card__text {
+  line-height: 1.6rem;
+}
+.card .mini_card {
+  background-color: var(--natural-clr-100);
+  border-radius: 1rem;
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .mini_card img {
+  max-height: 50px;
+}
+.card .mini_card__price {
+  text-align: start;
+  flex-grow: 1;
+  margin-left: 1.1rem;
+}
+.card .mini_card__price .title {
+  font-size: 1rem;
+  color: var(--natural-clr-900);
+  margin-bottom: 0.5rem;
+  font-weight: var(--fw-900);
+}
+.card .mini_card__price .price {
+  font-size: 1rem;
+}
+.card .mini_card .change {
+  color: #2E23A6;
+  font-weight: var(--fw-700);
+  transition: 0.2s ease-in-out;
+  font-size: 0.875rem;
+}
+.card .mini_card .change:hover {
+  color: var(--natural-clr-700);
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  font-weight: var(--fw-900);
+  background-color: #fff;
+  color: var(--natural-clr-500);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.pay {
+  background-color: var(--primary-clr-900);
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 1rem;
+  box-shadow: 0 5px 20px -5px var(--primary-clr-900);
+}
+.pay:hover {
+  background-color: var(--natural-clr-700);
+  box-shadow: 0 5px 20px -5px var(--natural-clr-700);
+}
+
+.cancel:hover {
+  color: var(--natural-clr-900);
+}/*# sourceMappingURL=styles.css.map */
